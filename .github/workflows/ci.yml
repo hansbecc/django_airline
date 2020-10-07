@@ -6,10 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-      with:
-        python-version: 3.7
     - name: Run Django unit tests
       run: |
-        python -m pip install --upgrade pip
-        pip install Django==3.0.2
-	python manage.py test
+        pip3 install --user django
+	python3 manage.py test
