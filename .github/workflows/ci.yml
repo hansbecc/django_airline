@@ -9,4 +9,5 @@ jobs:
     - name: Run Django unit tests
       run: |
         pip install pytest-django
+	python manage.py migrate
 	py.test
